@@ -1,54 +1,83 @@
 body {
-    margin: 0;
-} 
+  background-color: pink;
 
-nav li { 
-    list-style: none;
-    display: inline-block;
-    margin-right: 32px;
-    
-  }
-  a {
-    font-size: 50px;
-    text-decoration: none; 
-  }
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 32px;
+}
+a {
+  font-size: 50px;
+  text-decoration: none;
+}
 
 ul {
-    display: flex;
-    justify-content: space-between; 
-  } 
-  header {
-    font-family: "Big Shoulders Stencil Display"; 
-    padding: 7px;
-    margin: 0;
-    background-color: dodgerblue;
-    color: white;
-  }
-  
-  p 
-  {
-    
-    font-family: "Caveat"   
-    
-  }
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  font-family: "Big Shoulders Stencil Display";
+  padding: 7px;
+  margin: 0;
+  background-color: dodgerblue;
+  color: white;
+}
 
-  p 
-  {
-    font-size: 25px; 
-  }
+p {
+  font-family: "Caveat";
 
-  body 
-  {
-    background-color: pink
-  }
-  
-  footer {
-    font-family: "Roboto Slab", serif;
-    padding: 8px;
-    background-color: turquoise;
-    color: Black;
-    text-align: center;
-  } 
-  
- 
+  font-size: 25px;
+}
 
+footer {
+  font-family: "Roboto Slab", serif;
+  padding: 8px;
+  background-color: turquoise;
+  color: Black;
+  text-align: center;
+  position: bottom;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.item1 {
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+
+.item2 {
+  grid-row-start: 1;
+  grid-column-end: 5;
+}
+
+@keyframes hover {
+  from {
+    font-size: 50px;
+  }
+  to {
+    font-size: 70px;
+  }
+}
+
+li a:hover {
+  animation: hover 2s forwards;
+}
+
+.checkoulink {
+  font-size: 25 px;
+  color: Red;
+}
+.link {
+  font-size: 25px;
+  color: red;
+}
